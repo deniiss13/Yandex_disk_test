@@ -28,3 +28,4 @@ class DiskPageSelectors:
     NAME_FIELD = (By.CSS_SELECTOR, ".Textinput.Textinput_view_default :nth-child(1)")
     UPLOAD_FIELD = (By.CSS_SELECTOR, ".upload-button__attach")
     TEXT_IN_FILE = (By.XPATH, " //p[text()='This is file for upload on Yandex Drive.'] ")
+

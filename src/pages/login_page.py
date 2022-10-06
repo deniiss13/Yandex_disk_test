@@ -1,9 +1,6 @@
 import time
-
 from selenium.webdriver import Keys
-
 from src.pages.base_page import BasePage
-from selenium.webdriver.common.by import By
 from .constants import AuthData
 from .selectors import LoginPageSelectors
 
@@ -18,4 +15,4 @@ class LoginPage(BasePage):
         password_field = self.find_element(*LoginPageSelectors.PSWD_FIELD)
         password_field.send_keys(AuthData.password.value)
         password_field.send_keys(Keys.ENTER)
-        time.sleep(2)
+        time.sleep(2) #this sleep need for time for authorization

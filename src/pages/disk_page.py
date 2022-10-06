@@ -2,7 +2,7 @@ from selenium.webdriver import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 from src.pages.base_page import BasePage
 from .selectors import DiskPageSelectors
-from .constants import *
+from .constants import Names, Path
 
 
 class DiskPage(BasePage):

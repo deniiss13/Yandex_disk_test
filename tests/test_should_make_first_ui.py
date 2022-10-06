@@ -4,7 +4,7 @@ from src.pages import LoginPage
 from src.pages import MainPage
 
 
-def should_do_all_tests(browser):
+def test(browser):
     main_page = MainPage(browser, Links.MAIN_LINK.value)
     main_page.open()
     main_page.get_enter_button()

@@ -6,7 +6,7 @@ class Names(Enum):
 
 
 class Path(Enum):
-    UPLOAD_FILE = "/Users/denis/Desktop/upload.txt"
+    UPLOAD_FILE = "/Users/denis/Downloads/upload.txt"
     CORRECT_TEXT = "This is file for upload on Yandex Drive."
 
 
