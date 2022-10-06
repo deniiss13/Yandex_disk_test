@@ -4,11 +4,10 @@ from src.pages import LoginPage
 from src.pages import MainPage
 
 
-def test(browser):
+def should_do_all_tests(browser):
     main_page = MainPage(browser, Links.MAIN_LINK.value)
     main_page.open()
-    button = main_page.get_enter_button()
-    button.click()
+    main_page.get_enter_button()
     login_page = LoginPage(browser)
     login_page.enter_login()
     login_page.enter_pass()
@@ -16,4 +15,3 @@ def test(browser):
     disk_page.open()
     disk_page.copy_object()
     disk_page.delete_object()
-    disk_page.log_out()

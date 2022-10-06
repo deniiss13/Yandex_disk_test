@@ -5,7 +5,6 @@ from src.pages import MainPage
 
 
 def test(browser):
-    browser.implicitly_wait(5)
     main_page = MainPage(browser, Links.MAIN_LINK.value)
     main_page.open()
     button = main_page.get_enter_button()

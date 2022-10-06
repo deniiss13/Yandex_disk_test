@@ -10,3 +10,8 @@ class Files(Enum):
     FILE_FOR_COPY = "Файл для копирования.txt"
     NAME_COPY_FILE = "result.txt"
     DELETE_FILE = "new_folder_1%2FФайл для копирования.txt"
+
+
+AUTH = {
+    "Authorization": Token.TOKEN.value
+}
